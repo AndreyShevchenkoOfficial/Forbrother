@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Персональный сайт Никиты</title>
+  <style>
+   /* Стилизация фотографий и подписей */
+   .photo {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+   }
+
+   /* Добавление фона с помощью вашей фотографии */
+   body {
+    background-image: url("IMG_1004.JPG");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+   }
+
+   h1 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00,
+     0 0 20px #00ff00;
+    padding-bottom: 20px;
+   }
+
+   .photo {
+    position: relative;
+   }
+
+   .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    opacity: 0;
+    background-color: rgba(0, 255, 0, 0.5);
+   }
+
+   .caption:hover {
+    opacity: 1;
+   }
+
+   .caption-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00,
+     0 0 20px #00ff00;
+   }
+  </style>
+ </head>
+ <body>
+  <h1>Это Никита</h1>
+
+  <div class="photo">
+   <img src="IMG_0686.JPG" alt="Фотография 1" width="300" height="200" />
+   <div class="caption">
+    <div class="caption-text">Он чистокровный чёрт</div>
+   </div>
+  </div>
+
+  <div class="photo">
+   <img src="IMG_0658.JPG" alt="Фотография 2" width="300" height="200" />
+   <div class="caption">
+    <div class="caption-text">С виду он обычный человек</div>
+   </div>
+  </div>
+
+  <div class="photo">
+   <img src="IMG_0684.JPG" alt="Фотография 3" width="300" height="200" />
+   <div class="caption">
+    <div class="caption-text">Вокруг себя он собирает себе подобных</div>
+   </div>
+  </div>
+
+  <div class="photo">
+   <img src="IMG_1057.JPG" alt="Фотография 4" width="300" height="200" />
+   <div class="caption">
+    <div class="caption-text">Начал лысеть уже в 18 лет</div>
+   </div>
+  </div>
+
+  <div class="photo">
+   <img src="IMG_1322.JPG" alt="Фотография 5" width="300" height="200" />
+   <div class="caption">
+    <div class="caption-text">Вылезает из ада на землю</div>
+   </div>
+  </div>
+  <!-- Добавьте еще фотографии и подписи по аналогии -->
+ </body>
+</html>
